@@ -11,12 +11,13 @@ var appname = 'ca-customerapi'
 // existing resources
 resource uami 'Microsoft.ManagedIdentity/userAssignedIdentities@2021-09-30-preview' existing = {
   name: 'umi-${name}'
-}  
-resource acr 'Microsoft.ContainerRegistry/registries@2022-02-01-preview' existing = {
+}
+
+resource acr 'Microsoft.ContainerRegistry/registries@2019-12-01-preview' existing = {
   name: 'acr${name}'
 }
 
-resource cae 'Microsoft.App/managedEnvironments@2022-06-01-preview' existing = {
+resource cae 'Microsoft.App/managedEnvironments@2022-03-01' existing = {
   name: 'cae-${name}'
 }
 
