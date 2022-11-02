@@ -1,5 +1,5 @@
 
-// az deployment group create -g rg-[YOUR POSTFIX] -f infrastructure/main.bicep -p name=[YOUR POSTFIX] sqlpwd=[A SECRET] 
+
 
 param name string
 @secure()
